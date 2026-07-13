@@ -1,0 +1,15 @@
+# Virtual environment
+.venv/
+
+# Airflow logs and temp files
+logs/
+__pycache__/
+*.pyc
+*.pyo
+
+# Data file (do not submit)
+de_assessment_data.csv
+
+# OS
+.DS_Store
+Thumbs.db

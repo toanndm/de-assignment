@@ -1,0 +1,20 @@
+# =============================================================
+# DE Assessment — Python dependencies
+#
+# NOTE: Airflow runs inside Docker — do NOT install it locally.
+#       Only the packages below are needed on the host machine
+#       (for streaming scripts and monitor).
+#
+# Install:
+#   python -m venv .venv
+#   .venv\Scripts\activate        # Windows
+#   source .venv/bin/activate     # macOS/Linux
+#   pip install -r requirements.txt
+# =============================================================
+
+# Kafka client — used by streaming/producer.py and streaming/consumer.py
+# Note: kafka-python-ng is a maintained fork of kafka-python, compatible with Python 3.12+
+kafka-python-ng==2.2.3
+
+# PostgreSQL adapter — used by streaming/consumer.py and monitor.py
+psycopg2-binary==2.9.9
